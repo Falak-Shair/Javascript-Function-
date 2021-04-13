@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Q3): A company insures its drivers in the following cases: <br>
+    − If the driver is married. <br>
+    − If the driver is unmarried, male & above 30 years of age.<br> 
+    − If the driver is unmarried, female & above 25 years of age. <br>
+    In all other cases the driver is not insured. If the marital status, sex and age of the driver are the inputs, write a program to determine whether the driver is to be insured or not. 
+    <br><br>
+    <select name="" id="marital_status">
+        <option value="" selected disabled>selest marital status</option>
+        <option value="Married">Married</option>
+        <option value="UnMarried">UnMarried</option>
+    </select><br><br>
+
+    
+    <select name="" id="gender">
+        <option value="" selected disabled>selest gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select><br><br>
+
+   
+
+ <input type="text" placeholder="age" id="age">
+ <button onclick="myFunction()">Check</button>
+
+ <script>
+        function myFunction(){
+            var gender = document.getElementById('gender').value;
+            var marital_status = document.getElementById('marital_status').value;
+            var age = document.getElementById('age').value;
+
+            alert(insure(marital_status,gender,age))
+
+        }
+
+        function insure(marital_status,gender,age){
+            if(marital_status=='Married' && gender =='' && age  ==''){
+                return('Your are insure')
+            }
+            else if(marital_status=='UnMarried' && gender=='Male' && age>=30){
+                return('You are insured')
+            }
+            else if(marital_status=='UnMarried' && gender=='female' && age>=25){
+                return('You are insured')
+            }
+            else{
+                return('You are  not insured')
+            }
+        }
+
+ </script>
+</body>
+</html>

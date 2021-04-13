@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Q5): If cost price and selling price of an item is input 
+    through the keyboard, write a program to determine 
+    whether the seller has made profit or incurred loss. 
+    Also determine how much profit he made or loss he incurred. 
+    <br><br>
+
+    <label for="">Items</label>
+    <select name="" id="">
+        <option value="" selected disabled>Please Select item</option>
+        <option value="">watch</option>
+        <option value="">mobile</option>
+        <option value="">television</option>
+    </select><br><br>
+
+    <input type="text" placeholder="cost price" id="cost price"><br><br>
+    <input type="text" placeholder="selling price" id="selling price"><br><br>
+    <button onclick="myFunction()">CHECK</button>
+    <script>
+        function myFunction(){
+
+            var cost_price = document.getElementById('cost price').value;
+            var selling_price = document.getElementById('selling price').value;
+
+            alert(profit_loss_Check(cost_price,selling_price));
+
+        }
+
+        function profit_loss_Check(cost_price,selling_price){
+
+            var profit = selling_price - cost_price ;
+            var loss = cost_price - selling_price ;
+
+            if ( selling_price > cost_price ) {
+                return('Congratulation you have earned a profit of Rs:' +profit);
+            }
+            else if ( selling_price < cost_price ) {
+                return('You have earned a loss of Rs:' +loss);
+            }
+            else{
+                return('Your cost price and selling price are equall')
+            }
+
+        }
+           
+        
+    </script>
+</body>
+</html>

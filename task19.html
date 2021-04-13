@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Q19): Take three number through keyboard and return the sum and average of the numbers using Function
+
+    <input type="text" name="" id="no1">
+    <input type="text" name="" id="no2">
+    <input type="text" name="" id="no3">
+    <button onclick="myfunction()" type="button">Check</button>
+
+    <script>
+
+        function myfunction(){
+        var num1 = document.getElementById('no1').value;
+        var num2 = document.getElementById('no2').value;
+        var num3 = document.getElementById('no3').value;
+
+        document.write('sum: '+ sum(num1,num2,num3)+'<br>');
+        document.write('avg: '+ avg(num1,num2,num3)+'<br>');
+    }
+
+        function sum(x,y,z){
+            return parseInt(x)+parseInt(y)+parseInt(z);
+        }
+
+        function avg(x,y,z){
+            return (parseInt(x)+parseInt(y)+parseInt(z)/3 );
+        }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Q1): While purchasing certain items,
+     a discount of 10% is offered if the quantity 
+     purchased is more than 1000. If quantity and price per item 
+     are input through the keyboard,
+     write a program to calculate the total expenses. 
+
+    <br><br>
+    <input type="text" name="" id="qty" placeholder="enter quantity"><br><br>
+    <input type="text" name="" id="price" placeholder="enter price per item">
+    <button onclick="myFunction()">Check</button>
+
+    <script>
+
+        function myFunction(){
+            var qty = document.getElementById('qty').value;
+            var price = document.getElementById('price').value;
+
+            alert(calculate(qty,price))
+            
+            
+        }
+
+        function calculate(qty,price){
+            var amount = qty*price ;
+            var dis = amount - (amount*10 /100);
+            if( qty >=1000){
+                return('your amount after discount of Rs: ' +dis)
+            }
+            else{
+                return('your amount is ' +amount)
+            }
+
+        }
+    </script>
+</body>
+</html>

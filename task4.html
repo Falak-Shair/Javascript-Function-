@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+  <img src="Q4.JPG" alt="Q4"><br><br> 
+
+    <select name="" id="gender">
+        <option value="" selected disabled>Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select><br><br>
+
+    <input type="text" placeholder="Enter year of service" id="year of service"><br><br>
+
+    <select name="" id="qualification">
+        <option value="" selected disabled>Select Qualification</option>
+        <option value="Graduate">Graduate</option>
+        <option value="Post Graduate">Post Graduate</option>
+    </select>
+
+    <button onclick="myFunction()">CHECK</button>
+
+    <script>
+
+        function myFunction() {
+            var gender = document.getElementById('gender').value;
+            var service = document.getElementById('year of service').value;
+            var qualification = document.getElementById('qualification').value;
+            var year_of_service = 2020 - service;
+
+            alert(salary(gender,year_of_service,qualification));
+
+
+
+        }
+
+        function salary(gender,year_of_service,qualification) {
+
+            if (gender == 'Male' && year_of_service >= 10 && qualification == 'Post Graduate') {
+                return ('Your salary is 15000')
+            }
+
+            else if (gender == 'Male' && year_of_service >= 10 && qualification == 'Graduate') {
+                return ('Your salary is 10000')
+            }
+
+            else if (gender == 'Male' && year_of_service < 10 && qualification == 'Post Graduate') {
+                return ('Your salary is 10000')
+            }
+
+            else if (gender == 'Male' && year_of_service < 10 && qualification == 'Graduate') {
+                return ('Your salary is 7000')
+            }
+            
+            else if (gender == 'Female' && year_of_service >= 10 && qualification == 'Post Graduate') {
+                return ('Your salary is 12000')
+            }
+
+            else if (gender == 'Female' && year_of_service >= 10 && qualification == 'Graduate') {
+                return ('Your salary is 9000')
+            }
+
+            else if (gender == 'Female' && year_of_service < 10 && qualification == 'Post Graduate') {
+                return ('Your salary is 10000')
+            }
+
+            else if (gender == 'Female' && year_of_service < 10 && qualification == 'Graduate') {
+                return ('Your salary is 6000')
+            }
+
+            else {
+                return ('You are not registerd. Check your values')
+            }
+        }
+    </script>
+
+</body>
+
+</html>

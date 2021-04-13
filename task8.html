@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Q8): If the ages of Ali, Sarah and Ahmed are input 
+    through the keyboard,
+    write a program to determine the youngest of the three. <br><br>
+
+    <label for="">Ali</label>
+    <input type="text" placeholder="Ali, age" id="ali"><br><br>
+
+    <label for="">Sarah</label>
+    <input type="text" placeholder="Sarah, age" id="sarah"><br><br>
+
+    <label for="">Ahmed</label>
+    <input type="text" placeholder="Ahmed, age" id="ahmed">
+    <button onclick="myFunction()">Check</button>
+
+    <script>
+
+        function myFunction(){
+
+            var  ali_age = document.getElementById('ali').value;  
+            var  sarah_age = document.getElementById('sarah').value;  
+            var  ahmed_age = document.getElementById('ahmed').value; 
+
+            alert(age_check(ali_age,sarah_age,ahmed_age))
+            
+        }
+        function age_check(ali_age,sarah_age,ahmed_age){
+            
+            if( ali_age < sarah_age && ali_age < ahmed_age){
+                return('Ali is youngest')
+            }
+            else if( sarah_age < ali_age && sarah_age < ahmed_age){
+                return('Sarah is Youngest')
+            }
+            else{
+                return('Ahmed is youngest')
+            }
+            
+        }
+    </script>
+
+
+</body>
+</html>

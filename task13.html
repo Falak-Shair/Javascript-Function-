@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Q13): If the three sides of a triangle are entered through the keyboard, write a program to check whether the triangle is isosceles, equilateral, scalene or right angled triangle.
+<br><br>
+    <input type="text" name="" id="side_1">
+    <input type="text" name="" id="side_2">
+    <input type="text" name="" id="side_3">
+    <button onclick="myFunction()">Check</button>
+
+
+    <script>
+        function myFunction(){
+            var side_1 = document.getElementById('side_1').value;
+            var side_2 = document.getElementById('side_2').value;
+            var side_3 = document.getElementById('side_3').value;
+
+            if( side_1 != side_2 && side_1 != side_3 && side_2 !=side_3){
+                alert(' scalene triange')
+            }
+            
+            else if( side_1 == side_2 && side_1 == side_3 && side_2 ==side_3 ){
+                alert('equilaterial triange')
+            }
+            else {
+                alert('Isosceles triange')
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

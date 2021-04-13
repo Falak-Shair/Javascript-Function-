@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Q11): Any character is entered through the keyboard, write a program to determine whether the character entered is a capital letter, a small case letter, a digit or a special symbol.
+The following table shows the range of ASCII values for various characters.
+<br><br>
+    <input type="text" name="" id="num">
+    <button onclick="myFunction()">Check</button>
+
+    <script>
+        function myFunction(){
+            var num = document.getElementById('num').value;
+            // console.log(num.charCodeAt(0));
+            if ( num.charCodeAt(0) >= 65  &&  num.charCodeAt(0) <=90 ){
+                alert ('this is capital')
+            }
+            else if ( num.charCodeAt(0) >=97  &&  num.charCodeAt(0) <=122 ){
+                alert ('this is small alphabet')
+            }
+            else if ( num.charCodeAt(0) >=48  &&  num.charCodeAt(0) <=57 ){
+                alert ('this is number')
+            }
+            else{
+                alert('special character')
+            }
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Q9): Given the length and breadth of a rectangle, write a program 
+    to find whether the area of the rectangle is greater than its perimeter.
+     For example, the area of the rectangle with length = 5 and breadth = 4 is greater than its perimeter.
+    <br><br>
+    
+    <input type="text" name="" id="length"><br><br>
+    <input type="text" name="" id="breath">
+    <button onclick="myFunction()">check</button>
+
+    <script>
+        function myFunction(){
+            var length = document.getElementById('length').value;
+            var breath = document.getElementById('breath').value;
+            var area_par_obj = area_perimeter(length,breath);
+           console.log('area : ' +area( length , breath));
+           console.log('perimeter : ' +perimeter(length,breath));
+           
+            console.log('area : ' +area_par_obj.faizan);
+            console.log('perimeter : ' +area_par_obj.falak);
+        }
+
+        function area (length , breath) {
+
+            var area = length * breath;
+            return area;
+        }
+
+        function perimeter (length , breath){
+
+            var perimeter = 2 * length + 2 * breath ;
+            return perimeter ;
+        }
+    
+        function area_perimeter(length , breath) {
+            var perimeter = 2 * length + 2 * breath ;
+            var area = length * breath;
+            return {faizan: area, falak: perimeter};
+
+        }
+    
+    
+    </script>
+</body>
+</html>

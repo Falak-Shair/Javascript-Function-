@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Q7): Any year is input through the keyboard.
+     Write a program to determine whether the year is a leap year 
+     or not. <br><br>
+
+    <input type="text" placeholder="Enter any Year" id="year">
+    <button onclick="myFunction()">Check</button>
+
+    <script>
+
+        function myFunction(){
+            var year = document.getElementById("year").value;
+            alert(leap_year(year))
+        }
+        
+        function leap_year(year){
+            
+            if (year % 4 == 0) {
+                return("this is leap year")
+            }
+            else{
+                return('this is not leap year')
+            }
+        }
+
+    </script>
+</body>
+</html>

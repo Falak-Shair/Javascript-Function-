@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Q15): Write a program that computes the tax and tip on a restaurant bill for a patron with a Rs. 44.50 meal charge. The tax should be 6.75 percent of the meal cost. The tip should be 15 percent of the total after adding the tax. Display the meal cost, tax amount, tip amount, and total bill on the screen
+    
+
+
+    <script>
+         var meal_charge = 44.5 ;
+         var tax = (6.75*44.5)/100 ;
+         var tip = (15 *(tax+meal_charge))/100;
+        var tot = meal_charge + tax + tip ;
+
+         console.log('total amount: ' +tot.toFixed(2));
+         console.log('tip: ' +tip.toFixed(2));
+         console.log('tax: ' +tax.toFixed(2));
+
+
+
+
+    </script>
+</body>
+</html>

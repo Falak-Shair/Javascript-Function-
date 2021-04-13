@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Q17): Take thre number and return the minimum and maximum using Functions.
+    <br><br>
+    <input type="text" id="no1">
+    <input type="text" id="no2">
+    <input type="text" id="no3">
+    <button onclick="myFunction()">Check</button>
+
+    <script>
+
+        function myFunction(){
+            var num1 = document.getElementById('no1').value;
+            var num2 = document.getElementById('no2').value;
+             var num3 = document.getElementById('no3').value;
+         document.write(findmax(num1,num2,num3));
+        }
+
+            function findmax(n1,n2,n3){
+                var max = 0 ;
+                if (n1 > max)
+                 max = n1 ;
+                if (n2 > max)
+                max = n2  ; 
+                if (n3 > max)
+                 max = n3  ;
+                return max;
+            }
+
+
+    </script>
+</body>
+</html>

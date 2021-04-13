@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Q14): AKD bought 600 shares of stock at a price of 21.77 per share. A year later he sold them for just 16.44 per share. Write a program that calculates and displays the following:
+• The total amount paid for the stock.
+• The total amount received from selling the stock.
+• The total amount of money he lost.
+• Percentage loss
+
+
+    <script>
+
+        var tot_shares = 600 ;         //total shares bought
+        var per_buy = 21.77 ;           
+        var per_sale = 16.44 ;
+
+
+        var paid = tot_shares*per_buy ;          //total amount paid for stock
+        var sell = tot_shares*per_sale ;         //total amount recieve for stock
+        var loss = paid - sell ;                 //total amount he lost
+        var per = (loss/paid)*100;               //percentage of loss
+
+        console.log('total amount paid for stock: ' +paid);
+        console.log('total amount recieve for stock: ' +sell);
+        console.log('total amount he lost: ' +loss);
+        console.log('percentage of loss: ' +per.toFixed(2))
+
+    </script>
+</body>
+</html>

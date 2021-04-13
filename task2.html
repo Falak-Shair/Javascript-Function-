@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Q2): The current year and the year in which the employee joined the
+    organization are entered through the keyboard. 
+    If the number of years for which the employee has 
+    served the organization is greater than 3 then a 
+    bonus of Rs. 2500/- is given to the employee. 
+    If the years of service are not greater than 3, 
+    then the program should do nothing. 
+    <br><br>
+    
+    <input type="text" name="" id="c_year" placeholder="current year"><br><br>
+    <input type="text" name="" id="j_year" placeholder="year of joining">
+    <button onclick="myFunction()">Check</button>
+
+    <script>
+        function myFunction(){
+            var c_year = document.getElementById('c_year').value;
+            var j_year = document.getElementById('j_year').value;
+            alert(bounuschk(c_year , j_year) );
+        }
+
+        function bounuschk(c_year,j_year){
+            var year = c_year - j_year ;
+            if(year >= 3 ){
+                return('You are awarded a bonus of 2500');
+            }
+            else{
+                return('you are not awarded a bonus');
+            }
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

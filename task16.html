@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Q16) : Take two number through keyboard and perform arithmatic operation using Functions:
+    <br><br>
+    <input type="text" name="enter 1st number" id="no1">
+    <input type="text" name="enter 2nd number" id="no2">
+    <button onclick="myFunction()">Check</button>
+
+
+    <script>
+            function myFunction(){
+
+                var number_1 = document.getElementById('no1').value;
+                var number_2 = document.getElementById('no2').value;
+                
+                document.write('Add of Two No: ' + add(number_1,number_2));
+                document.write('<br>');
+                document.write('Sub of Two No: ' + sub(number_1,number_2));
+                document.write('<br>');
+                document.write('div of Two No: ' + div(number_1,number_2));
+                document.write('<br>');
+                document.write('prod of Two No: ' + prod(number_1,number_2));
+            }
+                
+
+            function add (x,y){
+                var a = parseInt(x) + parseInt(y);
+                return a;
+            }
+            function sub (x,y){
+                return x -= y;
+            }
+            function div (x,y){
+                return x /= y;
+            }
+            function prod (x,y){
+                return x *= y;
+            }
+
+
+    </script>
+
+
+
+</body>
+</html>

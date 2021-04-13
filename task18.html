@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Q18): Take a number and check whether it is even or odd using function .
+    <input type="text" id="no1">
+    <button onclick="myFunction()">Check</button>
+
+    <script>
+
+        function myFunction(){
+        var num1 = document.getElementById('no1').value;
+       document.write(even(num1));
+
+
+    }
+
+    function even(n1){
+
+        if( n1 % 2 == 0){
+            return ('this is even')
+        }
+        else{
+            return ('this is odd')
+        }
+        return n1;
+
+    }
+
+    
+       
+
+    
+    </script>
+
+
+</body>
+</html>
